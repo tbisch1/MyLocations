@@ -7,7 +7,6 @@
 
 import UIKit
 import CoreLocation
-import CoreData
 class LocationDetailsViewController: UITableViewController {
     @IBOutlet var descriptionTextView: UITextView!
     @IBOutlet var categoryLabel: UILabel!
@@ -15,8 +14,6 @@ class LocationDetailsViewController: UITableViewController {
     @IBOutlet var longitudeLabel: UILabel!
     @IBOutlet var addressLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
-    var managedObjectContext: NSManagedObjectContext!
-    var date = Date()
     
     @IBAction func categoryPickerDidPickCategory(_ segue: UIStoryboardSegue) {
         let controller = segue.source as! CategoryPickerViewController
@@ -47,7 +44,7 @@ class LocationDetailsViewController: UITableViewController {
         else {
             addressLabel.text = "No Address Found"
         }
-        dateLabel.text = format(date: date)
+        dateLabel.text = format(date: Date())
         
         // Hide keyboard
        let gestureRecognizer = UITapGestureRecognizer(
@@ -73,27 +70,11 @@ class LocationDetailsViewController: UITableViewController {
         let hudView = HudView.hud(inView: mainView, animated: true)
         hudView.text = "Tagged"
         
-        let location = Location(context: managedObjectContext)
-          
-        location.locationDescription = descriptionTextView.text
-        location.category = categoryName
-        location.latitude = coordinate.latitude
-        location.longitude = coordinate.longitude
-        location.date = date
-        location.placemark = placemark
-          
-        do {
-            try managedObjectContext.save()
-            afterDelay(0.6) {
-                hudView.hide()
-                self.navigationController?.popViewController(animated: true)
-            }
-        }
-        catch {
-            fatalCoreDataError(error)
+        afterDelay(0.6) {
+            hudView.hide()
+            self.navigationController?.popViewController(animated: true)
         }
     }
-    
     @IBAction func cancel() {
     navigationController?.popViewController(animated: true)
     }

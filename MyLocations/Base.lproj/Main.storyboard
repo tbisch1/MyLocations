@@ -134,7 +134,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="(Description goes here)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eJY-DB-Y2f">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                                    <rect key="frame" x="16" y="0.0" width="359" height="88"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <color key="textColor" systemColor="labelColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -142,10 +142,10 @@
                                                 </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="eJY-DB-Y2f" firstAttribute="leading" secondItem="VYc-Zy-mUF" secondAttribute="leading" id="8Jr-ek-BaK"/>
+                                                <constraint firstItem="eJY-DB-Y2f" firstAttribute="leading" secondItem="VYc-Zy-mUF" secondAttribute="leadingMargin" id="8Jr-ek-BaK"/>
                                                 <constraint firstAttribute="bottom" secondItem="eJY-DB-Y2f" secondAttribute="bottom" id="IRR-f2-iqr"/>
-                                                <constraint firstAttribute="trailing" secondItem="eJY-DB-Y2f" secondAttribute="trailing" id="XlA-ha-ZJx"/>
                                                 <constraint firstItem="eJY-DB-Y2f" firstAttribute="top" secondItem="VYc-Zy-mUF" secondAttribute="top" id="mKH-pf-wIg"/>
+                                                <constraint firstItem="eJY-DB-Y2f" firstAttribute="trailing" secondItem="VYc-Zy-mUF" secondAttribute="trailingMargin" constant="16" id="zNL-S3-msF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
