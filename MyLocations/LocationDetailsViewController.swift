@@ -8,6 +8,7 @@
 import UIKit
 import CoreLocation
 import CoreData
+
 class LocationDetailsViewController: UITableViewController {
     @IBOutlet var descriptionTextView: UITextView!
     @IBOutlet var categoryLabel: UILabel!
