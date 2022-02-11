@@ -48,7 +48,6 @@
 		2F53974427AC94E900D97466 = {
 			isa = PBXGroup;
 			children = (
-				2F53976827AFD19000D97466 /* LocationDetailsViewController.swift */,
 				2F53974F27AC94EA00D97466 /* MyLocations */,
 				2F53974E27AC94EA00D97466 /* Products */,
 			);
@@ -65,6 +64,7 @@
 		2F53974F27AC94EA00D97466 /* MyLocations */ = {
 			isa = PBXGroup;
 			children = (
+				2F53976827AFD19000D97466 /* LocationDetailsViewController.swift */,
 				2F53975027AC94EA00D97466 /* AppDelegate.swift */,
 				2F53975227AC94EA00D97466 /* SceneDelegate.swift */,
 				2F53975427AC94EA00D97466 /* CurrentLocationViewController.swift */,
