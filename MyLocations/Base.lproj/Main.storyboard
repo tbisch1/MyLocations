@@ -321,7 +321,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="c0Q-D1-o8i">
                             <connections>
-                                <action selector="done" destination="AZP-WA-aLt" id="hFD-28-Vpe"/>
+                                <action selector="done" destination="AZP-WA-aLt" id="JzW-by-1NH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
