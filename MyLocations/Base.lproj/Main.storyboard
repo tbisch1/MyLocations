@@ -342,7 +342,7 @@
                         <outlet property="dateLabel" destination="Wdo-wu-8AE" id="Idr-OL-Z80"/>
                         <outlet property="descriptionTextView" destination="eJY-DB-Y2f" id="0nf-QF-3O5"/>
                         <outlet property="imageHeight" destination="cFb-3L-PXx" id="woz-g8-uWZ"/>
-                        <outlet property="imageView" destination="ogI-cK-Fe0" id="j43-PE-bpF"/>
+                        <outlet property="imageView" destination="ogI-cK-Fe0" id="2hc-3j-mIW"/>
                         <outlet property="latitudeLabel" destination="Xca-91-nAM" id="izv-Oi-WGx"/>
                         <outlet property="longitudeLabel" destination="Q0j-6Z-KHC" id="e2p-EZ-H5m"/>
                     </connections>
